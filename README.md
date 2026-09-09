@@ -59,3 +59,4 @@ Referência: https://reactrouter.com/start/declarative/routing
 Os testes de fusos cobrem horário de verão, horários inexistentes/repetidos, fusos fracionários, mudança de dia, duração real, intervalos noturnos e sobreposição total/parcial/ausente.
 
 Referência da biblioteca: https://github.com/js-temporal/temporal-polyfill
+By - https://github.com/Gustavo-AQ
