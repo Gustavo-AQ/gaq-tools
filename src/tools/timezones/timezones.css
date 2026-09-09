@@ -1,0 +1,277 @@
+.tz-workspace {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.tz-form input,
+.tz-form select {
+  color: #d4ded6;
+}
+.tz-form select {
+  width: 100%;
+  min-width: 0;
+  border: 1px solid #343d36;
+  border-radius: 5px;
+  padding: 12px 8px;
+  background: #111613;
+  font: inherit;
+  font-size: 12px;
+  text-overflow: ellipsis;
+}
+.tz-form select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+.tz-text-button {
+  background: none;
+  border: 0;
+  color: var(--accent);
+  font: inherit;
+  font-size: 12px;
+  padding: 12px 0;
+  cursor: pointer;
+  text-align: left;
+}
+.tz-text-button:disabled {
+  opacity: 0.45;
+}
+.tz-form .panel-heading h2 {
+  font-size: 17px;
+}
+.tz-details {
+  border-top: 1px solid var(--border);
+  margin-top: 10px;
+  padding-top: 18px;
+  font-size: 12px;
+}
+.tz-details summary {
+  cursor: pointer;
+  color: #b9c8b3;
+}
+.tz-details p {
+  font-size: 11px;
+  margin: 10px 0 15px;
+}
+.tz-error {
+  color: #f2b3a0 !important;
+  background: #342621;
+  padding: 13px;
+  border: 1px solid #714938;
+  border-radius: 6px;
+  font-size: 12px !important;
+  margin-top: 16px !important;
+}
+.tz-work-toggle {
+  border-top: 1px solid var(--border);
+  padding-top: 22px;
+  margin-top: 22px;
+}
+.tz-work-toggle label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+}
+.tz-work-toggle input {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--accent);
+}
+.tz-work-toggle p {
+  font-size: 11px;
+  margin: 10px 0 0;
+}
+.tz-work-fields {
+  display: grid;
+  gap: 16px;
+  margin-top: 23px;
+}
+.tz-work-fields h3 {
+  font-size: 13px;
+  font-weight: 500;
+  border-top: 1px solid var(--border);
+  padding-top: 20px;
+}
+.tz-form .tz-hint,
+.tz-hint {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-top: 8px;
+}
+.tz-time-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.tz-time-card {
+  padding: 23px 18px;
+  border: 1px solid var(--border);
+  background: #191d1b;
+  border-radius: 10px;
+  min-width: 0;
+}
+.tz-time-card .eyebrow {
+  font-size: 9px;
+}
+.tz-time-card h3 {
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 14px;
+  min-height: 42px;
+}
+.tz-time-card strong {
+  font-variant-numeric: tabular-nums;
+  font-size: clamp(30px, 3.3vw, 48px);
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  display: block;
+  margin: 8px 0 4px;
+}
+.tz-time-card p {
+  font-size: 11px;
+  color: #c0ceba;
+}
+.tz-time-card small {
+  font-size: 9px;
+  color: var(--muted);
+  display: block;
+  overflow-wrap: anywhere;
+  margin-top: 12px;
+}
+.tz-destination {
+  background: #25321e;
+  border-color: #55713e;
+}
+.tz-destination strong {
+  color: var(--accent);
+}
+.tz-difference {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin: 18px 0 25px;
+}
+.tz-difference p {
+  font-size: 11px;
+  color: var(--muted);
+}
+.tz-comparison h2 {
+  margin: 12px 0 20px;
+}
+.tz-overlap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px;
+}
+.tz-overlap strong {
+  color: var(--accent);
+  font-size: 34px;
+  font-weight: 500;
+}
+.tz-overlap span {
+  font-size: 11px;
+  color: var(--muted);
+}
+.tz-comparison .tz-match {
+  color: #c7d9bc;
+  margin: 6px 0 22px;
+}
+.tz-interval {
+  border-top: 1px solid var(--border);
+  padding: 18px 0;
+}
+.tz-interval h3,
+.tz-common h3 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.tz-interval p,
+.tz-common p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 7px 0;
+}
+.tz-interval small {
+  font-size: 10px;
+  color: var(--muted);
+}
+.tz-common {
+  background: #26321f;
+  border: 1px solid #425b32;
+  border-radius: 7px;
+  padding: 16px;
+  margin: 0 0 16px;
+}
+.tz-note {
+  display: flex;
+  gap: 14px;
+  margin-top: 23px;
+  padding: 20px;
+  border: 1px dashed #35402f;
+  border-radius: 8px;
+  color: #9db58c;
+}
+.tz-note h2 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #c1cdbb;
+  margin-bottom: 5px;
+}
+.tz-note p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.tz-empty {
+  padding: 50px 25px;
+  text-align: center;
+}
+.tz-empty svg {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+.tz-empty h2 {
+  font-size: 18px;
+}
+.tz-empty p {
+  font-size: 12px;
+  margin-top: 10px;
+  color: var(--muted);
+}
+@media (max-width: 1150px) {
+  .tz-workspace {
+    grid-template-columns: 1fr;
+  }
+  .tz-time-card strong {
+    font-size: 44px;
+  }
+}
+@media (max-width: 600px) {
+  .tz-time-card {
+    padding: 20px 14px;
+  }
+  .tz-time-card strong {
+    font-size: 35px;
+  }
+  .tz-time-card h3 {
+    font-size: 12px;
+  }
+  .tz-time-grid {
+    gap: 10px;
+  }
+  .tz-difference {
+    align-items: start;
+  }
+  .tz-note {
+    padding: 17px;
+  }
+  .tz-form input[type="date"],
+  .tz-form input[type="time"] {
+    min-height: 44px;
+    max-width: 100%;
+  }
+}
