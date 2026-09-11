@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import AppLayout from "./layouts/AppLayout";
 import Home from "./pages/Home";
 import Salary from "./pages/Salary";
+import Json from "./pages/Json";
 import { lazy, Suspense } from "react";
 const Timezones = lazy(() => import("./pages/Timezones"));
 import NotFound from "./pages/NotFound";
@@ -23,6 +24,7 @@ export default function App() {
             </Suspense>
           }
         />
+        <Route path="json" element={<Json />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>

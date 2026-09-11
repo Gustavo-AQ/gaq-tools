@@ -1,0 +1,164 @@
+.json-workspace {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.json-panel {
+  min-width: 0;
+}
+
+.json-tool-icon {
+  background: #302d3d;
+  border-color: #51496b;
+  color: #c7b9ff;
+}
+
+.json-editor {
+  width: 100%;
+  min-height: 420px;
+  resize: vertical;
+  padding: 18px;
+  border: 1px solid #343d36;
+  border-radius: 7px;
+  background: #101411;
+  color: #d5ddd7;
+  font-family:
+    "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 13px;
+  line-height: 1.65;
+  tab-size: 2;
+  outline: none;
+}
+
+.json-editor:focus {
+  border-color: #759453;
+}
+
+.json-editor::placeholder {
+  color: #5f6a63;
+}
+
+.json-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 17px;
+}
+
+.json-actions .button {
+  gap: 8px;
+  cursor: pointer;
+}
+
+.button.secondary {
+  background: #202622;
+  border-color: #39423c;
+  color: #c7d0ca;
+}
+
+.button.secondary:hover {
+  border-color: #62705f;
+}
+
+.button.ghost {
+  background: transparent;
+  border-color: #343d36;
+  color: #8e9b92;
+}
+
+.json-output-heading {
+  justify-content: space-between;
+}
+
+.json-copy {
+  margin-left: auto;
+  padding: 8px 13px;
+  border: 1px solid #39423c;
+  border-radius: 5px;
+  background: #202622;
+  color: #b9c5bc;
+  cursor: pointer;
+}
+
+.json-copy:hover:not(:disabled) {
+  border-color: #759453;
+  color: var(--accent);
+}
+
+.json-copy:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.json-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 15px;
+  min-height: 24px;
+  color: #8f9b94;
+  font-size: 11px;
+}
+
+.json-status span {
+  width: 7px;
+  height: 7px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #657069;
+}
+
+.json-status-valid {
+  color: #b6d99b;
+}
+
+.json-status-valid span {
+  background: var(--accent);
+}
+
+.json-status-error {
+  color: #ef9d9d;
+}
+
+.json-status-error span {
+  background: #e66c6c;
+}
+
+.json-privacy {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  margin-top: 22px;
+  padding: 20px 22px;
+  border: 1px solid #323b34;
+  border-radius: 8px;
+  background: #171c19;
+}
+
+.json-privacy svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.json-privacy h2 {
+  font-size: 13px;
+  font-weight: 550;
+}
+
+.json-privacy p {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .json-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .json-editor {
+    min-height: 320px;
+  }
+}

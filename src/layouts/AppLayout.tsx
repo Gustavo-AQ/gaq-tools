@@ -11,6 +11,7 @@ export default function AppLayout() {
       "/": "Início",
       "/salary": "Salário e moedas",
       "/timezones": "Fusos horários",
+      "/json": "JSON Formatter",
     };
     document.title = `${titles[pathname] ?? "Página não encontrada"} · GAQ Tools`;
     if (previousPath.current !== pathname) {
@@ -48,6 +49,10 @@ export default function AppLayout() {
           <NavLink to="/timezones">
             <Icon name="clock" />
             Fusos horários
+          </NavLink>
+          <NavLink to="/json">
+            <Icon name="json" />
+            JSON Formatter
           </NavLink>
         </nav>
         <div className="sidebar-bottom">

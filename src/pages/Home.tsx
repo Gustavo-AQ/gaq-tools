@@ -46,7 +46,7 @@ export default function Home() {
             <span className="eyebrow">FEITAS PARA O SEU DIA A DIA</span>
             <h2>Suas ferramentas</h2>
           </div>
-          <span className="count">02 ferramentas disponíveis</span>
+          <span className="count">03 ferramentas disponíveis</span>
         </div>
         <div className="tool-grid">
           <Link to="/salary" className="tool-card salary-card">
@@ -89,6 +89,33 @@ export default function Home() {
             </div>
             <div className="card-bottom">
               Converter horários <Icon name="arrow" />
+            </div>
+          </Link>
+          <Link to="/json" className="tool-card json-card">
+            <div className="card-top">
+              <span className="tool-icon json-tool-icon">
+                <Icon name="json" />
+              </span>
+
+              <span className="badge available">Disponível</span>
+            </div>
+
+            <span className="mini-label">DESENVOLVIMENTO</span>
+
+            <h3>JSON Formatter</h3>
+
+            <p>
+              Valide, formate e minifique dados JSON rapidamente, direto no navegador.
+            </p>
+
+            <div className="tags">
+              <span>Formatter</span>
+              <span>Validator</span>
+              <span>Minify</span>
+            </div>
+
+            <div className="card-bottom">
+              Trabalhar com JSON <Icon name="arrow" />
             </div>
           </Link>
         </div>
